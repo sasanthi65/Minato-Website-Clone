@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>JF Japanese e-Learning Minato - User Registration</title>
+	<link rel="stylesheet" href="style.css" text="text/css">
+
+</head>
+
+<body>
+   
+    <div id="wrapper">
+        <div id="header">
+            <div id="header-inner">
+                <div id="logo-jf">
+                    <h1><a href="/Home/Index" class="opac"><img src="minato_logo_user_en.png" alt="" style="margin-left: -16px;"></a></h1>
+                </div>
+                <div id="header-nav" class="nologin clearfix hn-top">
+                    <ul class="ul-header-nav">
+                            <li class="header-regist"><a class="header-btn header-btn-account opac" href="#"><span>Sign Up</span></a></li>
+                            <li class="header-login"><a class="header-btn header-btn-account opac" href="login.html"><span>Login</span></a></li>
+                        <li class="header-text"><a href="/Guide/Index"><span>User Guide</span></a></li>
+                    </ul>
+                    <div class="select-box">
+                        <select class="form-control" id="Culture" name="Culture"><option value="1">English</option>
+							<option value="2">日本語</option>
+							<option value="3">Espa&#241;ol</option>
+							<option value="4">中文</option>
+							<option value="5">Bahasa Indonesia</option>
+							<option value="6">ภาษาไทย</option>
+							<option value="7">Tiếng Việt</option>
+						</select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<div id="content" class="clearfix">
+		<form action="/AccountRegist/Confirm" id="SignUpForm" method="post">
+		<div id="content-inner">
+			<div class="login-content-form mb30 clearfix">
+				<h2 class="login-content-form-h2">User Registration</h2>
+            <div class="form-group clearfix">
+                <form role="form">
+                    <div class="form-group clearfix clearfix" style="clear: both;">
+                        <p class="sign_up-form-title sign_up-form-title-top clearfix">At times we may provide information on new courses based on the content of registered user&#39;s information. By entering the most accurate details, we are then able to provide the most useful information.</p>
+                    </div>
+                </form>
+            </div>
+     
+            <div class="form-group clearfix">
+                <div class="col-sm-8">
+                    <label class="sign_up-form-title pr30" for="InputUserId">User ID<span>&nbsp;&lowast;</span></label><label class="label label-danger" style="font-size: 10px;">Public</label>
+                    <input class="input-validation-error form-control mb10" data-content="No changes can be made after registering. (6 alphanumeric characters)" data-placement="top" data-toggle="popover" data-trigger="focus" id="userIdInput" name="UserID" onblur="UserIDValidate(); " placeholder="6 alphanumeric characters" type="text" value="" />
+                    <div id="input-error-userid" class="text-danger"></div>
+                    <div class="input-note">
+                    </div>
+                </div>
+                <div class="sign_up-form-infomation-p"><p class="col-sm-4"></p></div>
+            </div>
+           
+            <div class="form-group clearfix">
+                <div class="col-sm-8">
+                    <label class="sign_up-form-title pr30" for="InputPassword1">Password<span>&nbsp;&lowast;</span></label><span class="label label-primary" style="font-size: 10px;">Non-Public</span>
+                    <input class="input-validation-error form-control mb10" data-content="Please use a combination of 6-20 alphanumeric characters." data-placement="top" data-toggle="popover" data-trigger="focus" id="Password" name="Password" placeholder="A combination of between 6 - 20 alphanumeric characters" type="password" />
+                    
+                </div>
+                <div class="sign_up-form-infomation-p"><p class="col-sm-4"></p></div>
+            </div>
+            
+          
+            <div class="form-group clearfix">
+                <div class="col-sm-8">
+                    <label class="sign_up-form-title pr30" for="inputName">Telephone Number<span>&nbsp;&lowast;</span></label><span class="label label-primary" style="font-size: 10px;">Non-Public</span>
+                    <input class="input-validation-error form-control mb10" data-content="Used for display on completion certificates and attendance certificates. (40 or less alphanumeric characters and/or symbols.)" data-placement="top" data-toggle="popover" data-trigger="focus" id="UserName" name="UserName" placeholder="10 digits" type="text" value="" />
+                    
+                </div>
+                <div class="sign_up-form-infomation-p"><p class="col-sm-4"></p></div>
+            </div>
+           
+                    
+                    
+
+           
+                   
+       
+            <div class="form-group clearfix mt50">
+                <div class="last_btn col-sm-12 text-center">
+                    <a href="javascript:void(0)" id="confirm" class="btn btn-info btn-lg">Confirm</a>
+                </div>
+            </div>
+			</div>
+		</div>
+		</form>
+	</div>
+		
+		
+    <div id="footer_b">
+        <div id="content-footer">
+            <div id="content-footer-inner">
+                <div class="footer-bn">
+                    <a class="opac" href="http://www.jpf.go.jp/e/index.html" target="_blank"><img src="logo_header_jf.png" alt="JAPAN FOUNDATION 国際交流基金"></a>
+                </div>
+			</div>
+
+		<div id="footer">
+
+			<div id="footer-inner">
+				<ul class="ul-nav-footer">
+					<li><a href="/Guide/Index"><span>User Guide</span></a></li>
+					<li><a href="/Faq/Index"><span>FAQ</span></a></li>
+					<li><a href="/Contact/Inquiry/Index"><span>Contact Us</span></a></li>
+					<li><a href="/AccountRegist/UserAgreement/Index" target="_blank"><span>Terms of Service</span></a></li>
+					<li><a href="/AccountRegist/Privacypolicy/Index" target="_blank"><span>Privacy Policy</span></a></li>
+					<li><a href="/AccountRegist/SpecifiedCommercialTransactions" target="SpecifiedCommercialTransactions"><span style="font-size:11px;">Notation based on the Act on Specified Commercial Transactions</span></a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<p>Copyright(c)2016-<script>document.write(new Date().getFullYear());</script> The Japan Foundation, All Rights Reserved.</p>
+			</div>
+
+		</div>
+		</div>
+	</div>
+</body>
+</html>
